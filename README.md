@@ -2,9 +2,10 @@
 # IAPR-1- Module 1 - FoC
 ## 1. Implementation of basic C programs using Literals,Consonants, Variables, Data types.
 ## 2. Implementation of different categories of operators.
+
 # Ex.No:1
   Build a C program to demonstrate the usage of different types of literals: integer, float, character, and string.  
-# Date : 
+# Date : 29 / 01 / 2026
 # Aim:
 To build a C program that prints integer, float,character, and string literals on the console using the printf() function.
 # Algorithm:
@@ -26,7 +27,22 @@ To build a C program that prints integer, float,character, and string literals o
 ### Step 4: 
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    char c1, c2, c3;
+    scanf(" %c", &c1);
+    scanf(" %c", &c2);
+    scanf(" %c", &c3);
+    printf("%c %c %c", c3, c2, c1);
+    return 0;
+}
+```
 # Output:
+<img width="407" height="258" alt="image" src="https://github.com/user-attachments/assets/5d6be046-8f35-4884-b799-f5db5cdadf54" />
+
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -57,7 +73,25 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int A;
+    scanf("%d", &A);
+    if (A > 0) {
+        printf("Positive number");
+    } else {
+        printf("Not a positive number");
+    }
+
+    return 0;
+}
+```
 # Output:
+<img width="538" height="198" alt="image" src="https://github.com/user-attachments/assets/eb3d52f0-6440-496f-a05e-31261ffb52c3" />
+
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -81,8 +115,22 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
+```
+#include <stdio.h>
+int main() {
+    float a, b, min;
+    scanf("%f %f", &a, &b);
+    min = (a < b) ? a : b;
+    printf("Minimum = %.2f", min);
+    return 0;
+}
+```
 # Output:
+<img width="532" height="226" alt="image" src="https://github.com/user-attachments/assets/3227f344-3429-4c2c-bc42-e374596357bc" />
+
 # Result: 
+
+Thus the program to find minimum between two fraction numbers using conditional operator or ternary operator has been executed successfully.
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
 # IAPR-1- Module 1 - FoC
@@ -120,7 +168,27 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int n;
+
+    // Read the input value
+    scanf("%d", &n);
+
+    // Check if the value is equal to 1
+    if (n == 1) {
+        printf("The value is equal to 1");
+    }
+
+    return 0;
+}
+```
 # Output:
+
+<img width="482" height="186" alt="image" src="https://github.com/user-attachments/assets/9e97a820-b317-4db9-97ae-65e26c57bbbb" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -165,7 +233,43 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    float m1, m2, m3, total, percent;
+
+    // Read marks of three subjects
+    scanf("%f %f %f", &m1, &m2, &m3);
+
+    // Calculate total and percentage
+    total = m1 + m2 + m3;
+    percent = (total / 300) * 100;
+
+    printf("Total = %.2f\n", total);
+    printf("Percentage = %.2f\n", percent);
+
+    // Check minimum marks and division
+    if (m1 >= 35 && m2 >= 35 && m3 >= 35) {
+        if (percent >= 60)
+            printf("First Division");
+        else if (percent >= 50)
+            printf("Second Division");
+        else if (percent >= 35)
+            printf("Pass");
+        else
+            printf("Fail");
+    } else {
+        printf("Fail");
+    }
+
+    return 0;
+}
+```
 # Output:
+
+<img width="445" height="276" alt="image" src="https://github.com/user-attachments/assets/d5a9d776-44d9-41d4-ad56-13ab21731b25" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
